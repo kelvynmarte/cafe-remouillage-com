@@ -8,5 +8,3 @@ logo.srcset = logoImage;
 
 var logo = document.getElementById('logo-mobile');
 logo.srcset = logoImageMobile;
-
-console.log('webpack starterkit');

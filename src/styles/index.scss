@@ -13,11 +13,11 @@ html, body {
 }
 
 .logo {
-  display:none;
 
   &#logo-desktop {
     margin-top: 3rem;
     width: 27rem;
+    display:none;
     @include breakpoint('s') {
       display:inline;
     }
@@ -26,8 +26,9 @@ html, body {
   &#logo-mobile {
     margin-top: 1.4rem;
     width: 20rem;
-    @include breakpoint('s', 'max') {
-      display:inline;
+    display:inline;
+    @include breakpoint('s') {
+      display:none;
     }
   }
 } 
