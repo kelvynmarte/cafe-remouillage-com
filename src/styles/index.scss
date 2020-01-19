@@ -1,0 +1,78 @@
+@import 'breakpoint';
+
+$text-color: #000000;
+
+html, body {
+  font-size: calc(9px + 0.14vmax);
+}
+
+.content {
+  margin: 0 auto;
+  // width: 600px;
+  text-align: center;
+}
+
+.logo {
+  display:none;
+
+  &#logo-desktop {
+    margin-top: 3rem;
+    width: 27rem;
+    @include breakpoint('s') {
+      display:inline;
+    }
+  }
+
+  &#logo-mobile {
+    margin-top: 1.4rem;
+    width: 20rem;
+    @include breakpoint('s', 'max') {
+      display:inline;
+    }
+  }
+} 
+
+nav {
+  font-family: 'Courier New', Courier, CourierNewPSMT, monospace;
+  font-size: 1.6rem;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 3rem 0 6rem 0;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 1.4rem 0;
+      @include breakpoint('s') {
+        margin: 1rem 0;
+      }
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+        &:visited  {
+          text-decoration: none;
+        }
+
+      } 
+
+    }
+  }
+
+}
+
+.hide-xs {
+  @include breakpoint('s', 'max') {
+    display: none;
+  }
+}
+
+.show-xs {
+  @include breakpoint('s', 'min') {
+    display: none;
+  }
+}
