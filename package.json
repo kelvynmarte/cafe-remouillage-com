@@ -1,53 +1,25 @@
 {
-  "name": "webpack-starter",
+  "name": "cafe-remouillage-com",
   "version": "1.0.0",
-  "description": "A light foundation for your next frontend project based on webpack.",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js --host 0.0.0.0"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss   css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
+    "url": "git+https://github.com/kelvynmarte/cafe-remouillage-com.git"
   },
-  "keywords": [
-    "webpack",
-    "startkit",
-    "frontend",
-    "es6",
-    "javascript",
-    "webdev"
-  ],
-  "author": "webkid.io",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wbkd/webpack-starter/issues"
+    "url": "https://github.com/kelvynmarte/cafe-remouillage-com/issues"
   },
+  "homepage": "https://github.com/kelvynmarte/cafe-remouillage-com#readme",
   "devDependencies": {
-    "@babel/core": "^7.8.0",
-    "@babel/plugin-proposal-class-properties": "^7.8.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.0",
-    "@babel/preset-env": "^7.8.2",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.1.1",
-    "cross-env": "^6.0.3",
-    "css-loader": "^3.4.2",
-    "eslint": "^6.8.0",
-    "eslint-loader": "^3.0.3",
-    "file-loader": "^4.3.0",
-    "html-webpack-plugin": "^4.0.0-beta.11",
-    "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.1",
-    "style-loader": "^1.1.2",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1",
-    "webpack-merge": "^4.2.2"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.8.0",
-    "core-js": "^3.6.3"
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2"
   }
 }
