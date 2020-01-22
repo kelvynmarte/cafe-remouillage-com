@@ -66,6 +66,20 @@ nav {
 
 }
 
+.closed-notes {
+  display: none;
+}
+
+body.currently-closed {
+  .closed-notes {
+    display: inline;
+  }
+  .opening-hours {
+    text-decoration: line-through $text-color;  
+  }
+  
+}
+
 .hide-xs {
   @include breakpoint('s', 'max') {
     display: none;
@@ -76,4 +90,8 @@ nav {
   @include breakpoint('s', 'min') {
     display: none;
   }
+}
+
+.hide {
+  display: none;
 }

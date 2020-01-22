@@ -52,6 +52,15 @@ nav {
         nav ul li a:visited {
           text-decoration: none; }
 
+.closed-notes {
+  display: none; }
+
+body.currently-closed .closed-notes {
+  display: inline; }
+
+body.currently-closed .opening-hours {
+  text-decoration: line-through #000000; }
+
 @media (max-width: 667px) {
   .hide-xs {
     display: none; } }
@@ -59,3 +68,6 @@ nav {
 @media (min-width: 667px) {
   .show-xs {
     display: none; } }
+
+.hide {
+  display: none; }
