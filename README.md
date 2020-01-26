@@ -2,7 +2,10 @@
 
 ## Wartung
 
-and closed-notes im HTML löschen oder im css als hidden oder im scss ?
+and closed-notes anzeigen/verstecken
+
+* im HTML in Kommentarklammern "<!-",  "-->"
+* im css display: none
 
 ## Development
 
